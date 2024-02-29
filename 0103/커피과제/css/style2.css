@@ -1,0 +1,133 @@
+*{margin: 0; padding: 0;}
+.wrap {
+    width: 900px;
+    margin: 0 auto;
+    /* background-color: #999; */
+}
+header {
+    position: relative;
+    /* 앱솔루트 줄 블럭의 부모에게 릴레이티브 */
+    height: 300px;
+    /* border: 1px solid #333; */
+    /* background-image: url('../images/top.jpg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover; */
+    /* 화면 꽉차게. */
+    background:url('../images/top.jpg') no-repeat 0 0 / cover ;
+    /* cover랑 포지션이랑 구분을 못하기 때문에 cover 앞에 / */
+}
+/* header h1.logo{}
+풀네임으로 할 경우 h1.logo 붙여서 */
+header h1{
+    position: absolute;
+    /* 앱솔루트 줄 블럭의 부모에게 릴레이티브 */
+    bottom: 50px;
+    right: 50px;
+    color: #fff;
+}
+nav{
+    width: 900px;
+    height: 70px;
+    background-color: #2a1d0a;
+}
+nav ul{
+    list-style: none;/*불릿 없애기*/
+}
+nav ul li{
+    float: left;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+nav ul li a{
+    display: block;
+    /* a는 인라인요소 width, height를 적용하기 위해
+    블럭 요소로 변경해준다. */
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    /* 세로중앙정렬 주기 위해서 */
+    color: #fff;
+    border: 1px solid #fff;
+    text-align: center;/*가로중앙정렬*/
+    border-radius: 20px;
+    /* 양끝 둥글게 */
+    text-decoration: none;
+    /* 글자의 밑줄 없애기 */
+    font-weight: bold;
+}
+/* a에 마우스를 올렸을 때 */
+nav ul li a:hover{
+    background-color: #fff;
+    color: #333;
+    text-decoration: underline;
+    /* 밑줄 주기 */
+}
+section {
+    width: 650px;
+    height: 550px;
+    background-color:#ccc ;
+    float: left;
+    
+    
+}
+section h3{
+    padding:10px 0;
+    /* 위아래 10px */
+    text-align: center;
+}
+section article{
+    width: 270px;
+    height: 200px;
+    border: 1px solid #333;
+    float: left;
+    padding: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+article:hover{
+    background-color: rgba(0,0,0,0.5);
+    /* article 구역에 마우스를 가져다댔을 때 배경 색 지정 */
+}
+article h4{
+    background: url('../images/kong.png') no-repeat 0 0;
+    /*left top혹은 0 0*/
+    padding-left: 30px;
+    /* 콩 예쁘게 자리잡게 하려면 텍스트에 패딩주기 */
+    padding-bottom: 10px;
+
+}
+article p{
+    line-height: 1.7em;
+    /* 글자 사이 간격 */
+    text-align: justify;
+    /* 글자 양쪽 정렬 */
+}
+aside{
+    width: 250px;
+    height: 550px;
+    background-color: #726054;
+    float: left;
+    text-align: center;
+}
+aside h3{
+    padding: 10px 0;
+    /* 위아래 10px */
+    
+}
+
+
+aside img{
+    width: 220px;
+    padding-bottom: 15px;
+}
+footer{
+    clear: both;
+    height: 60px;
+    line-height: 60px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+

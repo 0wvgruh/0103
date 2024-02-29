@@ -1,0 +1,37 @@
+* {margin: 0; padding: 0;}
+ul {list-style: none;}
+
+#container {
+    width: 800px;
+    margin: 100px auto 0;
+}
+#header {position: relative;}
+
+#header>ul {
+    /* > 표시는 바로 밑에. */
+   overflow: hidden;
+
+}
+.one> li {
+    float: left;}
+    .one li {
+        background-color: #bfb2ff;}
+.one li a {
+    display: block; /*이래야 넓이 주기 편함*/
+    width: 200px;
+    height: 50px;
+    line-height: 50px; /*height과 똑같이 주면 중앙정렬됨*/
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+}
+.one li ul{
+    display: none;
+    position: absolute;
+}
+.one li:hover ul {
+    display: block;
+}
+.one li a:hover{
+    background-color: yellow;
+}

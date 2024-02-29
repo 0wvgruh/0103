@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position1</title>
+<style>
+* {margin: 0; padding: 0;}
+body {
+    height: 3000px;
+}
+.box {
+    width: 150px;
+    height: 150px;
+}
+.box1 {
+    position: fixed;
+    background-color: aqua;
+    bottom: 50px;
+    right: 50px;
+}
+.box2 {
+    background-color: burlywood;
+}
+.box3 {
+    position: absolute; /*자리 값이 없어서 이동하면 자리를 뺐김*/
+    top: 50px;
+    left: 50px;
+    background-color: brown;
+}
+.box4 {
+    background-color: darkgreen;
+}
+/* relative */
+/* 1. 기준 위치 : 원래 컨텐츠 위치에서 이동한다.*/
+/* 2. 겹침 : 다른 컨텐츠와 겹칠 수 있다.*/
+</style>
+
+
+</head>
+<body>
+    <div class="box box1">박스1</div>
+    <div class="box box2">박스2</div>
+    <div class="box box3">박스3</div>
+    <div class="box box4">박스4</div>
+</body>
+</html>
